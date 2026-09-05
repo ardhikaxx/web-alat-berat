@@ -16,7 +16,7 @@ export const business: BusinessInfo = {
   phoneFormatted: "081-358-107-399",
   whatsappMessage:
     "Halo CV Artha Nabila, saya ingin konsultasi mengenai kebutuhan rental/sewa alat berat.",
-  instagram: "https://www.instagram.com/cvarthanabila/",
+  instagram: "https://www.instagram.com/rentalsewaalatberat_jember/",
   tiktok: "https://www.tiktok.com/@rentalalatberatjember",
   location: "Jember, Jawa Timur",
   locationDetail: "Jember, Jawa Timur, Indonesia",
@@ -90,7 +90,7 @@ export const equipment: Equipment[] = [
     category: "Penggalian & Pemindahan",
     description:
       "Cocok untuk penggalian, pemindahan material, dan pekerjaan tanah lainnya.",
-    image: "https://images.pexels.com/photos/10071297/pexels-photo-10071297.jpeg?auto=compress&w=600&h=400&fit=crop",
+    image: "/images/equipment-excavator.jpg",
     alt: "Excavator untuk pekerjaan konstruksi",
   },
   {
@@ -99,7 +99,7 @@ export const equipment: Equipment[] = [
     category: "Pemuatan & Pengangkutan",
     description:
       "Untuk kebutuhan pemuatan material, pasir, batu, dan material proyek lainnya.",
-    image: "https://images.pexels.com/photos/5125782/pexels-photo-5125782.jpeg?auto=compress&w=600&h=400&fit=crop",
+    image: "/images/equipment-wheel-loader.jpg",
     alt: "Wheel Loader untuk proyek konstruksi",
   },
   {
@@ -108,7 +108,7 @@ export const equipment: Equipment[] = [
     category: "Perataan & Pendorongan",
     description:
       "Mesin pendorong untuk perataan lahan, pembersihan area, dan pemindahan material.",
-    image: "https://images.pexels.com/photos/12247592/pexels-photo-12247592.jpeg?auto=compress&w=600&h=400&fit=crop",
+    image: "/images/equipment-bulldozer.jpg",
     alt: "Bulldozer untuk perataan lahan",
   },
   {
@@ -117,7 +117,7 @@ export const equipment: Equipment[] = [
     category: "Pengangkutan Material",
     description:
       "Kendaraan pengangkut material proyek seperti tanah, pasir, batu, dan lainnya.",
-    image: "https://images.pexels.com/photos/10410019/pexels-photo-10410019.jpeg?auto=compress&w=600&h=400&fit=crop",
+    image: "/images/equipment-dump-truck.jpg",
     alt: "Dump Truck untuk pengangkutan material",
   },
   {
@@ -126,7 +126,7 @@ export const equipment: Equipment[] = [
     category: "Pemadatan Tanah",
     description:
       "Untuk pemadatan tanah dan material pada proyek jalan dan konstruksi.",
-    image: "https://images.pexels.com/photos/6474471/pexels-photo-6474471.jpeg?auto=compress&w=600&h=400&fit=crop",
+    image: "/images/equipment-vibro-roller.jpg",
     alt: "Vibro Roller untuk pemadatan tanah",
   },
   {
@@ -135,7 +135,7 @@ export const equipment: Equipment[] = [
     category: "Pengangkatan & Pemindahan",
     description:
       "Untuk kebutuhan pengangkatan material berat dan perancah konstruksi.",
-    image: "https://images.pexels.com/photos/8961216/pexels-photo-8961216.jpeg?auto=compress&w=600&h=400&fit=crop",
+    image: "/images/equipment-crane.jpg",
     alt: "Crane untuk pengangkatan material berat",
   },
 ];
@@ -145,28 +145,28 @@ export const useCases: UseCase[] = [
     id: "konstruksi",
     title: "Konstruksi",
     description: "Pembangunan dan pekerjaan konstruksi.",
-    image: "https://images.pexels.com/photos/2835436/pexels-photo-2835436.jpeg?auto=compress&w=600&h=400&fit=crop",
+    image: "/images/usecase-konstruksi.jpg",
     alt: "Pekerjaan konstruksi",
   },
   {
     id: "pekerjaan-tanah",
     title: "Pekerjaan Tanah",
     description: "Penggalian, pemindahan material, dan perataan lahan.",
-    image: "https://images.pexels.com/photos/5025666/pexels-photo-5025666.jpeg?auto=compress&w=600&h=400&fit=crop",
+    image: "/images/usecase-tanah.jpg",
     alt: "Pekerjaan tanah",
   },
   {
     id: "pembangunan-jalan",
     title: "Pembangunan Jalan",
     description: "Mendukung pekerjaan jalan dan infrastruktur.",
-    image: "https://images.pexels.com/photos/1267338/pexels-photo-1267338.jpeg?auto=compress&w=600&h=400&fit=crop",
-    alt: "Pembangunan jalan",
+    image: "/images/usecase-jalan.jpg",
+    alt: "Pekerjaan pembangunan jalan",
   },
   {
     id: "perkebunan",
     title: "Perkebunan & Lahan",
     description: "Pekerjaan pembukaan dan pengelolaan area.",
-    image: "https://images.pexels.com/photos/2760243/pexels-photo-2760243.jpeg?auto=compress&w=600&h=400&fit=crop",
+    image: "/images/usecase-perkebunan.jpg",
     alt: "Pekerjaan perkebunan dan lahan",
   },
 ];
@@ -241,6 +241,6 @@ export const seo: SEOData = {
     "CV Artha Nabila",
     "rental alat berat terdekat Jember",
   ],
-  ogImage: "https://images.pexels.com/photos/10071297/pexels-photo-10071297.jpeg?auto=compress&w=1200&h=630&fit=crop",
+  ogImage: "/images/hero-bg.jpg",
   url: "https://cvarthanabila.com",
 };

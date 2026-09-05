@@ -7,7 +7,7 @@ export default function CTASection() {
       {/* Background */}
       <div className="absolute inset-0">
         <Image
-          src="https://images.pexels.com/photos/6474471/pexels-photo-6474471.jpeg?auto=compress&w=1920&h=800&fit=crop"
+          src="/images/cta-bg.jpg"
           alt="Alat berat untuk proyek konstruksi"
           fill
           className="object-cover"

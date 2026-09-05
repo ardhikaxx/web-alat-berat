@@ -14,7 +14,7 @@ export default function Hero() {
       {/* Background image */}
       <div className="absolute inset-0">
         <Image
-          src="https://images.pexels.com/photos/10071297/pexels-photo-10071297.jpeg?auto=compress&w=1920&h=1080&fit=crop"
+          src="/images/hero-bg.jpg"
           alt="Alat berat excavator untuk proyek konstruksi"
           fill
           priority

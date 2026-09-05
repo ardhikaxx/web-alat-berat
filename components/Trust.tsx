@@ -31,7 +31,7 @@ export default function Trust() {
           <div className="relative">
             <div className="aspect-[4/5] bg-light overflow-hidden">
               <Image
-                src="https://images.pexels.com/photos/5125782/pexels-photo-5125782.jpeg?auto=compress&w=800&h=1000&fit=crop"
+                src="/images/about-main.jpg"
                 alt="Alat berat wheel loader untuk proyek konstruksi di Jember"
                 width={800}
                 height={1000}
@@ -45,7 +45,7 @@ export default function Trust() {
             {/* Overlapping small image */}
             <div className="absolute -bottom-8 -right-8 w-48 h-32 bg-charcoal overflow-hidden hidden lg:block">
               <Image
-                src="https://images.pexels.com/photos/12247592/pexels-photo-12247592.jpeg?auto=compress&w=400&h=250&fit=crop"
+                src="/images/about-small.jpg"
                 alt="Bulldozer alat berat"
                 width={400}
                 height={250}
