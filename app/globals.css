@@ -1,26 +1,107 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --color-charcoal: #1a1a1a;
+  --color-graphite: #2d2d2d;
+  --color-industrial: #3a3a3a;
+  --color-steel: #4a4a4a;
+  --color-concrete: #6b6b6b;
+  --color-dust: #9a9a9a;
+  --color-light: #f5f5f0;
+  --color-off-white: #fafaf7;
+  --color-yellow: #f5a623;
+  --color-yellow-hover: #e6951a;
+  --color-yellow-dark: #cc8400;
+  --color-dark-bg: #111111;
+  --color-dark-surface: #1a1a1a;
+  --color-dark-border: #2a2a2a;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  --color-charcoal: var(--color-charcoal);
+  --color-graphite: var(--color-graphite);
+  --color-industrial: var(--color-industrial);
+  --color-steel: var(--color-steel);
+  --color-concrete: var(--color-concrete);
+  --color-dust: var(--color-dust);
+  --color-light: var(--color-light);
+  --color-off-white: var(--color-off-white);
+  --color-yellow: var(--color-yellow);
+  --color-yellow-hover: var(--color-yellow-hover);
+  --color-yellow-dark: var(--color-yellow-dark);
+  --color-dark-bg: var(--color-dark-bg);
+  --color-dark-surface: var(--color-dark-surface);
+  --color-dark-border: var(--color-dark-border);
   --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-off-white);
+  color: var(--color-charcoal);
+  font-family: var(--font-sans), system-ui, sans-serif;
+}
+
+/* Fade-up animation for sections */
+.fade-up {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger children */
+.stagger-children .fade-up:nth-child(1) { transition-delay: 0ms; }
+.stagger-children .fade-up:nth-child(2) { transition-delay: 100ms; }
+.stagger-children .fade-up:nth-child(3) { transition-delay: 200ms; }
+.stagger-children .fade-up:nth-child(4) { transition-delay: 300ms; }
+.stagger-children .fade-up:nth-child(5) { transition-delay: 400ms; }
+.stagger-children .fade-up:nth-child(6) { transition-delay: 500ms; }
+
+/* Image hover zoom */
+.img-zoom {
+  overflow: hidden;
+}
+.img-zoom img {
+  transition: transform 0.5s ease;
+}
+.img-zoom:hover img {
+  transform: scale(1.05);
+}
+
+/* Section label */
+.section-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color-yellow);
+}
+
+/* Equipment card image container */
+.equipment-image {
+  aspect-ratio: 3/2;
+  overflow: hidden;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-off-white);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-dust);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-concrete);
 }
